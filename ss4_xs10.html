@@ -6,130 +6,93 @@
     <title>ss4 xs10</title>
   </head>
   <body>
-    <div
-      style="
-        width: 440px;
-        height: 400px;
-        background-color: #f0f0f0;
-        padding: 10px;
-        font-family: Arial, sans-serif;
-        border: 2 solid gray;
-      "
-    >
+    <div>
+      <h1>John Doe</h1>
+      <p>Web Developer | Tech Enthusiast | Problem Solve</p>
+      <img
+        style="height: 200px; width: 200px"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxJaHSJ6G70FZor-_IMU3klFKdRUDACIL6A&s"
+        alt=" anh chan dung"
+      />
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>About Me</h2>
+      <p>
+        Hello! I am a passionate web developer who loves creating interactive
+        and user-friend websites
+      </p>
+      <p style="margin-left: 30px">
+        "Code is humor. When you have to explain it, it's bad." - Cory House
+      </p>
+    </div>
+
+    <div>
+      <h2>Projects</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>A simple personal portfolio website.</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>To-Do List App</td>
+            <td>A web-based to-do list application.</td>
+            <td><a href="#">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2>Contact me</h2>
       <form action="#">
         <div>
-          <h3>Billing Address</h3>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" />
         </div>
-        <div style="margin-bottom: 10px">
-          <label style="margin-bottom: 6px" for="fullName">
-            <img
-              style="width: 10px; height: 10px"
-              src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png"
-              alt="people"
-            />
-            Full name</label
-          >
-          <br />
-          <input
-            type="text"
-            name="fullName"
-            id="fullName"
-            placeholder="John M.Doe"
-            style="width: 400px; padding: 6px"
-          />
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" />
         </div>
-
-        <div style="margin-bottom: 10px">
-          <label style="margin-bottom: 6px" for="email">
-            <img
-              style="width: 10px; height: 10px"
-              src="https://cdn-icons-png.flaticon.com/128/542/542689.png"
-              alt="email"
-            />
-            Email</label
-          >
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="john@example.com"
-            style="width: 400px; padding: 6px"
-          />
+        <div>
+          <label for="mess">Messenge: </label> <br />
+          <textarea name="mess" id="mess"></textarea>
         </div>
-
-        <div style="margin-bottom: 10px">
-          <label style="margin-bottom: 6px" for="address">
-            <img
-              style="width: 10px; height: 10px"
-              src="https://cdn-icons-png.flaticon.com/128/3596/3596091.png"
-              alt="Address"
-            />
-            Address</label
-          >
-          <br />
-          <input
-            type="text"
-            name="address"
-            id="address"
-            placeholder="542W.15th Street"
-            style="width: 400px; padding: 6px"
-          />
-        </div>
-
-        <div style="margin-bottom: 10px">
-          <label style="margin-bottom: 6px" for="city">
-            <img
-              style="width: 10px; height: 10px"
-              src="https://cdn-icons-png.flaticon.com/128/4582/4582719.png"
-              alt="City"
-            />
-            City</label
-          >
-          <br />
-
-          <input
-            type="text"
-            name="city"
-            id="city"
-            placeholder="New York"
-            style="width: 400px; padding: 6px"
-          />
-        </div>
-
-        <div style="margin-bottom: 10px">
-          <label style="margin-bottom: 6px" for="state">State</label>
-          <br />
-
-          <input
-            type="text"
-            name="fullName"
-            id="fullName"
-            placeholder="NY"
-            style="width: 400px; padding: 6px"
-          />
-        </div>
-        <div style="margin-bottom: 10px">
-          <input type="checkbox" checked name="ship" id="ship" />
-          <label style="margin-bottom: 6px" for="ship"
-            >Shipping address same as billing</label
-          >
-        </div>
-        <div style="margin-bottom: 10px">
-          <button
-            style="
-              width: 410px;
-              background-color: rgb(50, 159, 65);
-              color: white;
-              border: none;
-              border-radius: 3px;
-              padding: 6px;
-            "
-          >
-            Continue to checkout
-          </button>
+        <div>
+          <button type="submit">Send</button>
         </div>
       </form>
     </div>
+
+    <div>
+      <h2>Featured Video</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/WGpNaFNPFYE?si=Bzi1Jiv_3VDgLNX_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
   </body>
+  <footer>
+    <p>&#169; 2024 John Doe</p>
+    <p><a href="#">LinkedIn</a> | <a href="#">Github</a></p>
+  </footer>
 </html>
